@@ -11,7 +11,7 @@ public class App {
         useCase.useCaseOne().subscribe(
             x -> {
                 long endTime = System.currentTimeMillis();
-                System.out.println("Total Time " + (endTime-startTime));
+                System.out.println("First Time " + (endTime-startTime));
             },
             Throwable::printStackTrace,
             () -> {
